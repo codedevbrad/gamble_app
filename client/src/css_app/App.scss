@@ -1,0 +1,63 @@
+
+@import "./variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+* { -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, a, li, p, input, label, textarea, button {
+  font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.87em;
+}
+
+div { font-family: 'Montserrat', sans-serif; }
+
+
+input , button { font-weight: 400; }
+
+/* -- html content -- */
+
+html, body { padding: 0; margin: 0;  width: 100%; background: $main_color;  }
+
+html    { height: 100%; }
+body    { min-height: 100%; height: 100%;  max-height: 100%; color: white; }
+
+a       { text-decoration: none; color: white; cursor: pointer; }
+a:hover { text-decoration: none; }
+svg     { pointer-events:  none; }
+
+.App , #root , .main { background: $main_color; width: 100%; height: 100%; color: white; }
+
+/* -- extra -- */
+
+input    { display: block; color: white;  }
+
+button , input , textarea { outline: none; border: none; }
+
+.error   { position: fixed; top: 30px; right: 50px; background: #123de6; z-index: 9999;
+           color: white; padding: 10px 25px; border-radius: 3px; font-weight: 400; width: 285px;
+
+           .error_message { font-size: 0.6em; font-weight: 400; padding: 10px 0; }
+         }
+
+.auth_error_msg { border-left: 4px solid red; text-align: left;
+                  font-size: 0.64em; padding: 2px 4px; margin: 20px 0;
+                }
+
+.hero_img_circle  { width: 39px; height: 38px; border-radius: 50%; padding: 2px; background: #8bb2ff; }
+
+img.hero_img      { vertical-align: middle; width: 100%; height: 100%; border-radius: 50%;  }
+
+
+.progress_bar_contain {  background: #5962e67a; position: relative; }
+
+.progress_bar         {
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out; -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    background-size: 26px 26px; background-color: blue; background-image:
+    linear-gradient(
+    45deg, rgba(255, 255, 255, .3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .3) 50%,
+    rgba(255, 255, 255, .3) 75%, transparent 75%, transparent
+    )
+}
+
+//

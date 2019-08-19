@@ -1,0 +1,33 @@
+{
+  "name": "pusher-game" ,
+  "version": "1.0.0" ,
+  "description": "play a game against online players. need more points? head to the shop and upgrade the amount of bits you have.",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"nodemon server bin/dev './client/src'\" \"npm run client\"",
+    "server": "nodemon server bin/dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "mongoose": "^5.4.19",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pusher": "^2.2.0",
+    "pusher-js": "^4.4.0",
+    "stripe": "^7.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^7.0.0"
+  }
+}
