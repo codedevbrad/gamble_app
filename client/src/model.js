@@ -12,7 +12,7 @@ export default {
   pusherKey: { }  ,
   googleKey: { }  ,
   got_Keys: false ,
-  
+
   isLoading:  true ,
 
   // user auth
@@ -81,7 +81,7 @@ export default {
          actions.authenticate( obj );
       })
       .catch( err => {
-        actions.logAuthError( err.response.data);
+        actions.logAuthError( err.response.data );
         console.log( err.response.data );
       });
   }),

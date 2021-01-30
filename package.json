@@ -1,6 +1,6 @@
 {
-  "name": "pusher-game" ,
-  "version": "1.0.0" ,
+  "name": "pusher-game",
+  "version": "1.0.0",
   "description": "play a game against online players. need more points? head to the shop and upgrade the amount of bits you have.",
   "main": "server.js",
   "scripts": {

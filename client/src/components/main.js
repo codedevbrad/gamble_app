@@ -39,6 +39,7 @@ const MainApp = () => {
      useEffect(() => {
         clearErrors();
         getUser();
+        console.log('triggered dashboard' , error );
         // eslint-disable-next-line
      }, []);
 
