@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "client-install": "cd client && npm install",
+    "server": "nodemon server bin/dev",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"nodemon server bin/dev './client/src'\" \"npm run client\"",
-    "server": "nodemon server bin/dev"
+    "dev": "concurrently \"nodemon server bin/dev './client/src'\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",

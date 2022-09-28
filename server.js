@@ -1,4 +1,3 @@
-
 const express  = require('express');
 const path     = require('path');
 const mongoose = require('mongoose');
@@ -19,6 +18,14 @@ mongoose
   .then ( ()  => console.log('mongodb Connected'))
   .catch( err => console.log( err ));
 
+
+const views_path = __dirname + '/views/';
+  
+app.use(express.static( views_path ));
+
+app.get('/', function (req,res) {
+  res.sendFile( views_path + "index.html");
+});
 
 // pass user to all routes ...
 app.get('*', ( req , res , next ) => { next(); });
